@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" type="text/css" href="_css/contato.css"/>
+    <script language="javascript" src="_javascript/funcoes.js"></script>
+</head>
+<body>
+    <div id="Interface">
+        <header id="cabecalho">
+            
+            <img src="_imagens/coralsf.png" id="icone">
+            <!--MENUS-->
+            <nav id="menus">
+                <ul>
+                    <li onmousemove="mudaFoto('_imagens/casasf.png')" onmouseout="mudaFoto('_imagens/coralsf.png')" ><a href="index.html">Início</a></li>
+                        <li onmousemove="mudaFoto('_imagens/peixesf.png')" onmouseout="mudaFoto('_imagens/coralsf.png')" ><a href="peixes.html">Peixes</a></li>
+                        <li onmousemove="mudaFoto('_imagens/aquariosf.png')" onmouseout="mudaFoto('_imagens/coralsf.png')" ><a href="aquarios.html">Aquários</a></li>
+                        <li onmousemove="mudaFoto('_imagens/promocoessf.png')" onmouseout="mudaFoto('_imagens/coralsf.png')" ><a href="produtosgerais.html">Produtos Gerais</a></li>
+                        <li onmousemove="mudaFoto('_imagens/ajudasf.png')" onmouseout="mudaFoto('_imagens/coralsf.png')"><a href="contato.html">Contato</a></li>
+    
+                </ul>
+            </nav>
+        
+        </header>
+
+    
+    
+
+<section id="principal">
+    
+    <h1>Contato</h1>
+    <p>
+    Complete e envie o formulário a seguir para entrarmos em contato.
+    </p>
+
+
+    <form method="post" id="fContato" action="malto:rogersoubrand1a@gmail.com" oninput="tipodeAjuda();">
+        <fieldset  id="cliente">
+            <legend>Dados do Cliente</legend>
+            <p><label form="cNome">Nome: </label><input type="text" name="tNome" id="cNome" size="30" maxlength="30" placeholder="Nome Completo" />  </p>
+            <p><label form="cMail">E-mail: </label><input type="email" name="tMail" id="cMail" size="22" maxlength="22" placeholder="Melhor E-mail"/>  </p>
+            <p><label form="cData">Data de Nascimento:</label> <input type="date" name="tNasc" id="cNasc"/> </p>
+
+            <fieldset id="endereco">
+                <legend>Endereço</legend>
+                <p><label form="cRg">Região: </label> 
+                    <select name="tReg" id="cReg">
+                        <option value-="roça"> Região Barreiro</option>
+                        <option value="lest">Região Leste</option>
+                        <option value="nordes">Região Nordeste</option>
+                        <option value="noro">Região Noroeste</option>
+                        <option value="nort">Região Norte</option>
+                        <option value="oest">Região Oeste</option>
+                        <optgroup label="Frete Grátis">
+                        <option value="centro">Região Centro Sul</option>
+                        <option value="Pamp" selected>Região Pampulha</option>
+                        <option value="vend">Região Venda Nova</option>
+                    </optgroup>
+                    </select>
+                </p>
+                <p><label form="cBairr">Bairro: </label><input type="text" name="tBairr" id="cBairr" size="22" maxlength="30" placeholder="Seu Bairro"/></p>
+                <p><label form="cRua">Rua: </label><input type="text" name="tRua" id="cRua" size="22" maxlength="30" placeholder="Rua, Av, Trav..."/></p>
+                <p><label form="cNum">Número: </label><input type="number" name="tNum" id="cNum" min="0" max="99999"/></p>
+            </fieldset>
+        </fieldset>
+
+        <fieldset id="ajuda">
+            <legend>Forma de Ajuda</legend>
+            <p><label form="cVirt"><input type="radio" name="tAjud" id="cVirt"/><label for="cVirt"> Virtual </label> </label></p>
+            <p><label form="cPresen"><input type="radio" name="tAjud" id="cPresen"/><label for="cPresen">  Presencial </label></label></p>
+
+            <fieldset id="tipo">
+                <legend>Tipo de Ajuda</legend>
+                <p>Coloque 1 para ajuda em Peixes</p>
+                <p>Coloque 2 para ajuda em Acessórios</p>
+                <p>Coloque 3 para ajuda em Aquários</p>
+                <p><label form="cTipo" >Escolha:</label> 
+                    <select name="tTipo" id="cTipo">
+                        <option id="cTpo"> 1 </option>
+                        <option id="cTipo"> 2 </option>
+                        <option id="cTipo"> 3 </option>
+                    </select> </p>
+                </fieldset>
+
+            <fieldset id="mensagem">
+            <legend>mensagem do usuário</legend>
+            <p><label for="Curg">Grau de Urgência: </label> Min<input type="range" name="turg" id="cUrg" min="0" max="10" step="2"/>Máx </p>
+            <p><label for="cMsg">Mensagem: </label><textarea name="tMsg" id="cMsg" cols="35" rows="5" placeholder="deixe sua mensagem e/ou um resumo do que precisa de ajuda"></textarea></p>
+        </fieldset>
+    </fieldset>
+
+        <fieldset id="orcamento">
+            <legend>Orçamento</legend>
+            <p>A seguir, veja o orçamento do seu atendendimento presencial</p>
+            <p><label form="cCient"><input type="checkbox" name="tcient" id="cCient"/> <a href="https://www.significados.com.br/ciente/" target="_blank">Estou ciente que cada tipo de atendimento presencial contém um preço</a></label></p>
+            <p><label form="cTot">Preço: R$</label>
+            <input type="text" name="tTot" id="cTot" placeholder="Valor do Atendimento"readonly/>  </p>
+        
+        
+            <input type="image" name="tEnviar" src="_imagens/enviar.png" width="300"/>
+        
+    </fieldset>
+    </form>
+
+
+
+
+
+
+</section>
+    
+<aside id="lateral">
+    <h3>Peixes Lovers</h3>
+    <p>Os clientes da Peixes Flora, carinhosamente chamados de 
+        "Peixes Lovers", encontram uma paixão apaixonada por explorar
+        os fascinantes mistérios dos ecossistemas aquáticos 
+        tropicais. A Peixes Flora se destaca por seu compromisso em
+        oferecer suporte abrangente aos seus clientes. Desde orientações
+        sobre a montagem adequada de instrutores até 
+        informações específicas sobre as necessidades individuais de 
+        diferentes espécies de peixes, a empresa está empenhada em 
+        empoderar os "Peixes Lovers" com conhecimento.</p>
+    <img src="_imagens/peixe22.gif">
+</aside>
+
+<footer id="rodape">
+    <p> <a href="https://www.google.com/maps/place/Armaz%C3%A9m+Central+-+Mercado+Central/@-19.9224999,-43.9435874,20z/data=!4m15!1m8!3m7!1s0xa69907f4ed6e2d:0xdf84d9c189e4db27!2sArmaz%C3%A9m+Central+-+Mercado+Central!8m2!3d-19.9224999!4d-43.9435874!10e5!16s%2Fg%2F11jg1ttntc!3m5!1s0xa69907f4ed6e2d:0xdf84d9c189e4db27!8m2!3d-19.9224999!4d-43.9435874!16s%2Fg%2F11jg1ttntc?entry=ttu"
+            target="_blank"> Rua Santa Catarina, Corredor Santa Catarina, 102 - Loja 102 -
+            Centro, Belo Horizonte - MG</a> </br> <a href="https://www.instagram.com/"
+            target="_blank">Instagram</a> | Roger Souza Brandão </br> <a
+            href="https://www.mg.senac.br/DocsAreasComuns/Portfolio_Digital_cursos.pdf" target="_blank">
+            Técnico em Informática</a> 2/3</p>
+</footer>
+</div>
+</body>
+</html>
