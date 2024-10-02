@@ -173,6 +173,22 @@ img#colorido{
 /* POSIÇÃO DOS UL DE SATISFAÇÃO */
 ul#satisfacao{
     position: absolute;
-    top: 3600px;
+    top: 3900px;
     left: 600px;
+}
+
+/* Cor nos tipos de produto no menu de produtos geral */
+.letraa:hover{
+    background-color: #fce490;
+    border-radius: 40px;
+    margin-right: 400px;
+}
+ul#prod{
+    margin-right: 250px;
+}
+
+.usuario{
+    position: relative;
+    left: 1500px;
+    top:-300px;
 }

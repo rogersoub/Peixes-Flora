@@ -172,10 +172,16 @@ input{
     font-family:Arial, sans-serif ;
     font-weight: normal;
     font-size: 13pt;
+    border-radius: 15px;
+    color: #000000;
+}
+select#cReg{
+    border-radius: 15px;
 }
 /* coloca uma cor cinza nos de escrever ao passar o mouse */
 input:hover{
     background-color: #dddddd;
+    
 }
 /* area de texto */
 input, textarea{
@@ -199,4 +205,19 @@ fieldset{
 }
 fieldset#mensagem{
     width:470px;
+}
+/* tirando borda */
+fieldset{
+    border: none;
+}
+fieldset#ajuda{
+    border-top: 4px ridge #BB9469;
+}
+fieldset#mensagem{
+    border-top: 4px ridge #BB9469;
+}
+.usuario{
+    position: relative;
+    left: 1100px;
+    top:-200px;
 }

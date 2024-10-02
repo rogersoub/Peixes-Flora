@@ -26,7 +26,19 @@
                         <li onmousemove="mudaFoto('_imagens/aquariosf.png')" onmouseout="mudaFoto('_imagens/coralsf.png')" ><a href="aquarios.html">Aquários</a></li>
                         <li onmousemove="mudaFoto('_imagens/promocoessf.png')" onmouseout="mudaFoto('_imagens/coralsf.png')" ><a href="produtosgerais.html">Produtos Gerais</a></li>
                         <li onmousemove="mudaFoto('_imagens/ajudasf.png')" onmouseout="mudaFoto('_imagens/coralsf.png')"><a href="contato.html">Contato</a></li>
-
+                        <li onmousemove="mudaFoto('_imagens/promocoessf.png')" onmouseout="mudaFoto('_imagens/coralsf.png')"><a href="comprar.html">Comprar</a></li>
+                        
+                        <div class="cadastro">
+                            <button class="usuario">
+                                <img src="/_imagens/boneco-login.png" onclick="abre()" />
+                            </button>
+                            <script>
+                                function abre(){
+                                window.location.href='cadastro.php';
+                                }
+                            
+                            </script>
+                        </div>
                     </ul>
                 </nav>
 
@@ -75,23 +87,27 @@
                     <ul id="prod">
                         <li>Peixes</li>
                         <ul>
-                            <li>Rações</li>
-                            <li>Vermífugos</li>
-                            <li>Imunizantes</li>
+                            <li onmousemove="racoes()" class="letraa">Rações</li>
+                            <li onmousemove="verme()" class="letraa">Vermífugos</li>
+                            <li onmousemove="imuno()" class="letraa">Imunizantes</li>
                         </ul>
                         <li>Aquários</li>
                         <ul>
-                            <li>Bombas de Oxigênio</li>
-                            <li>Enfeites</li>
-                            <li>Produtos de limpeza</li>
+                            <li onmousemove="bomba()" class="letraa">Bombas de Oxigênio</li>
+                            <li onmousemove="enfeite()" class="letraa">Enfeites</li>
+                            <li onmousemove="limpeza()" class="letraa">Produtos de limpeza</li>
                         </ul>
                     </ul>
 
-                    <!-- SOM -->
+                        <img src="/_imagens/ajudasf.png" class="pg-img">
+                        
+                    </p>
+
+                    <!-- SOM 
                     <audio controls="controls">
                         <source src="_media/blublu.aac" type="audio/s-aac" />
                         Não foi possível carregar o áudio
-                    </audio>
+                    </audio>-->
 
 
                     <h2>Peixes Tropicais</h2>

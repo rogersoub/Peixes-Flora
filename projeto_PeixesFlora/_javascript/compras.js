@@ -236,91 +236,91 @@ function mostra36(){
 // 1-1
 function imagem11(){
     var img11 = window.document.querySelector('.foto1-1')
-    img11.src = '_imagens/aquario-p.PNG'
+    img11.src = '/_imagens/aquario-p.PNG'
 }
     // 1-2
     function imagem12(){
         var img12 = window.document.querySelector('.foto1-2')
-        img12.src = '_imagens/aquario-m.jpg'
+        img12.src = '/_imagens/aquario-m.jpg'
     }
     // 1-3
     function imagem13(){
         var img13 = window.document.querySelector('.foto1-3')
-        img13.src = '_imagens/aquario-g.jpg' 
+        img13.src = '/_imagens/aquario-g.jpg' 
     }
     // 1-4
     function imagem14(){
         var img14 = window.document.querySelector('.foto1-4')
-        img14.src = '_imagens/aquario-gg.jpg'
+        img14.src = '/_imagens/aquario-gg.jpg'
     }
     // 1-5
     function imagem15(){
         var img15 = window.document.querySelector('.foto1-5')
-        img15.src = '_imagens/aquario-xg.jpg'
+        img15.src = '/_imagens/aquario-xg.jpg'
     }
 
 
     // 2-1
     function imagem21(){
         var img21 = window.document.querySelector('.foto2-1')
-        img21.src = '_imagens/peixe-bobo.png' 
+        img21.src = '/_imagens/peixe-bobo.png' 
     }
     // 2-2
     function imagem22(){
         var img22 = window.document.querySelector('.foto2-2')
-        img22.src = '_imagens/peixe-salema.png' 
+        img22.src = '/_imagens/peixe-salema.png' 
     }
     // 2-3
     function imagem23(){
         var img23 = window.document.querySelector('.foto2-3')
-        img23.src = '_imagens/peixe-dozeli.png' 
+        img23.src = '/_imagens/peixe-dozeli.png' 
     }
     // 2-4
     function imagem24(){
         var img24 = window.document.querySelector('.foto2-4')
-        img24.src = '_imagens/peixe-barboti.png' 
+        img24.src = '/_imagens/peixe-barboti.png' 
     }
     // 2-5
     function imagem25(){
         var img25 = window.document.querySelector('.foto2-5')
-        img25.src = '_imagens/peixe-cauadef.png' 
+        img25.src = '/_imagens/peixe-cauadef.png' 
     }
     // 2-6
     function imagem26(){
         var img26 = window.document.querySelector('.foto2-6')
-        img26.src = '_imagens/peixe-raboar.png' 
+        img26.src = '/_imagens/peixe-raboar.png' 
     }
 
 
     // 3-2
     function imagem31(){
         var img31 = window.document.querySelector('.foto3-1')
-        img31.src = '_imagens/racao.png' 
+        img31.src = '/_imagens/racao.png' 
     }
     // 3-2
     function imagem32(){
         var img32 = window.document.querySelector('.foto3-2')
-        img32.src = '_imagens/vermifugo.png' 
+        img32.src = '/_imagens/vermifugo.png' 
     }
     // 3-3
     function imagem33(){
         var img33 = window.document.querySelector('.foto3-3')
-        img33.src = '_imagens/imunizante.PNG' 
+        img33.src = '/_imagens/imunizante.PNG' 
     }
     // 3-4
     function imagem34(){
         var img34 = window.document.querySelector('.foto3-4')
-        img34.src = '_imagens/bomba.png' 
+        img34.src = '/_imagens/bomba.png' 
     }
     // 3-5
     function imagem35(){
         var img35 = window.document.querySelector('.foto3-5')
-        img35.src = '_imagens/enfeite.png' 
+        img35.src = '/_imagens/enfeite.png' 
     }
     // 3-6
     function imagem36(){
         var img36 = window.document.querySelector('.foto3-6')
-        img36.src = '_imagens/limpeza.png' 
+        img36.src = '/_imagens/limpeza.png' 
     }
 
 

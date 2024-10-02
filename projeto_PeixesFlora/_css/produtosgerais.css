@@ -180,3 +180,8 @@ figure#limpeza{
     left: 300px;
     top:20px;
 }
+.usuario{
+    position: relative;
+    left: 1100px;
+    top:-200px;
+}

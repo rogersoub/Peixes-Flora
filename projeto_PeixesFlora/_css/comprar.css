@@ -231,3 +231,8 @@ input#cTot{
     margin-left: 400px;
     border-radius: 40px;
 }
+.usuario{
+    position: relative;
+    left: 1100px;
+    top:-200px;
+}
