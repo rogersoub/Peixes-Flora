@@ -1,11 +1,22 @@
 /*fonte Barlow, Gloria Hallelujah  e Yanone Kaffeesatz*/
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Gloria+Hallelujah&family=Oswald&family=Yanone+Kaffeesatz&display=swap');
 /* Cor da página */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: borde-box; 
+}
+:root{
+    --ocean:rgb(16, 16, 80);
+    --clearBrow: #fce490;
+}
+
 body{
-    color:rgb(16, 16, 80);
-    background-color: #fce490;
+    color:var(--ocean);
+    background-color: var(--clearBrow);
     font-family: Arial, sans-serif;
     font-size: 20pt;
+    overflow-x: hidden;
 }
 
 /* LARGURA DO TEXTO NA PÁGINA */

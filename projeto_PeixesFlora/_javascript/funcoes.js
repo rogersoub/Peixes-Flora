@@ -21,6 +21,7 @@ function mudaFoto(foto){
 // TIPO DE AJUDA
 
 function tipodeAjuda(){
+    console.log("entrou")
     var total=5
     // tipo de local
     var tpl = document.getElementsByName('tAjudl')
@@ -69,26 +70,26 @@ function tipodeAjuda(){
 //MOSTRA IMAGEM DO PRODUTO GERAL NO INÍCIO 
 function racoes(){
     var rac = window.document.querySelector('.pg-img')
-    rac.src = '/_imagens/racao.png' 
+    rac.src = "_imagens/racao.png"; 
 }
 function verme(){
     var ver = window.document.querySelector('.pg-img')
-    ver.src = '/_imagens/vermifugo.png' 
+    ver.src = '_imagens/vermifugo.png' 
 }
 function imuno(){
     var imu = window.document.querySelector('.pg-img')
-    imu.src = '/_imagens/imunizante.png' 
+    imu.src = '_imagens/imunizante.png' 
 }
 // aquários
 function bomba(){
     var bom = window.document.querySelector('.pg-img')
-    bom.src = '/_imagens/bomba.png' 
+    bom.src = '_imagens/bomba.png' 
 }
 function enfeite(){
     var enfeite = window.document.querySelector('.pg-img')
-    enfeite.src = '/_imagens/enfeite.png' 
+    enfeite.src = '_imagens/enfeite.png' 
 }
 function limpeza(){
     var lim = window.document.querySelector('.pg-img')
-    lim.src = '/_imagens/limpeza.png' 
+    lim.src = '_imagens/limpeza.png' 
 }

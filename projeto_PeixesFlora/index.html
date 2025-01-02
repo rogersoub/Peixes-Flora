@@ -9,40 +9,70 @@
         <!-- linkando CSS -->
         <link rel="stylesheet" type="text/css" href="_css/estilo.css" />
         <!-- linkando JAVASCRIPT -->
-        <script language="javascript" src="_javascript/funcoes.js"></script>
+        <script language="javascript" src="/projeto_PeixesFlora/_javascript/funcoes.js"></script>
     </head>
 
     <body>
-        <div id="Interface">
+ 
             <header id="cabecalho">
 
-<img src="_imagens/coralsf.png" id="icone">
+                <div id="header-desk">
 
-                <!--MENUS-->
-                <nav id="menus">
-                    <ul>
-                        <li onmousemove="mudaFoto('_imagens/casasf.png')" onmouseout="mudaFoto('_imagens/coralsf.png')" ><a href="index.html">Início</a></li>
-                        <li onmousemove="mudaFoto('_imagens/peixesf.png')" onmouseout="mudaFoto('_imagens/coralsf.png')" ><a href="peixes.html">Peixes</a></li>
-                        <li onmousemove="mudaFoto('_imagens/aquariosf.png')" onmouseout="mudaFoto('_imagens/coralsf.png')" ><a href="aquarios.html">Aquários</a></li>
-                        <li onmousemove="mudaFoto('_imagens/promocoessf.png')" onmouseout="mudaFoto('_imagens/coralsf.png')" ><a href="produtosgerais.html">Produtos Gerais</a></li>
-                        <li onmousemove="mudaFoto('_imagens/ajudasf.png')" onmouseout="mudaFoto('_imagens/coralsf.png')"><a href="contato.html">Contato</a></li>
-                        <li onmousemove="mudaFoto('_imagens/promocoessf.png')" onmouseout="mudaFoto('_imagens/coralsf.png')"><a href="comprar.html">Comprar</a></li>
-                        
-                        <div class="cadastro">
-                            <button class="usuario">
-                                <img src="/_imagens/boneco-login.png" onclick="abre()" />
-                            </button>
-                            <script>
-                                function abre(){
-                                window.location.href='cadastro.php';
-                                }
+                    <!--MENUS-->
+                    <nav class="menus">
+
+                        <img src="/projeto_PeixesFlora/_imagens/boneco-login.png" onclick="window.location.href='/projeto_PeixesFlora/aquarios.html'" class="usuario"/>
+
+                        <ul>
+
+                            <li onmousemove="mudaFoto('_imagens/casasf.png')" onmouseout="mudaFoto('_imagens/coralsf.png')" ><a href="index.html">Início</a></li>
+                            <li onmousemove="mudaFoto('_imagens/peixesf.png')" onmouseout="mudaFoto('_imagens/coralsf.png')" ><a href="peixes.html">Peixes</a></li>
+                            <li onmousemove="mudaFoto('_imagens/aquariosf.png')" onmouseout="mudaFoto('_imagens/coralsf.png')" ><a href="aquarios.html">Aquários</a></li>
+                            <li onmousemove="mudaFoto('_imagens/promocoessf.png')" onmouseout="mudaFoto('_imagens/coralsf.png')" ><a href="produtosgerais.html">Produtos Gerais</a></li>
+                            <li onmousemove="mudaFoto('_imagens/ajudasf.png')" onmouseout="mudaFoto('_imagens/coralsf.png')"><a href="contato.html">Contato</a></li>
+                            <li onmousemove="mudaFoto('_imagens/promocoessf.png')" onmouseout="mudaFoto('_imagens/coralsf.png')"><a href="comprar.html">Comprar</a></li>
+
+
+                        </ul>
+                        <img src="_imagens/coralsf.png" id="icone">
+                    </nav>  
+                </div>
+
+                <div id="header-mobile">
+
+                    <!--MENUS-->
+                        <nav id="menus">
+                            <ul>
+                                <li onmousemove="mudaFoto('_imagens/casasf.png')" onmouseout="mudaFoto('_imagens/coralsf.png')" ><a href="index.html">Início</a></li>
+                                <li onmousemove="mudaFoto('_imagens/peixesf.png')" onmouseout="mudaFoto('_imagens/coralsf.png')" ><a href="peixes.html">Peixes</a></li>
+                                <li onmousemove="mudaFoto('_imagens/aquariosf.png')" onmouseout="mudaFoto('_imagens/coralsf.png')" ><a href="aquarios.html">Aquários</a></li>
+                                <li onmousemove="mudaFoto('_imagens/promocoessf.png')" onmouseout="mudaFoto('_imagens/coralsf.png')" ><a href="produtosgerais.html">Produtos Gerais</a></li>
+                                <li onmousemove="mudaFoto('_imagens/ajudasf.png')" onmouseout="mudaFoto('_imagens/coralsf.png')"><a href="contato.html">Contato</a></li>
+                                <li onmousemove="mudaFoto('_imagens/promocoessf.png')" onmouseout="mudaFoto('_imagens/coralsf.png')"><a href="comprar.html">Comprar</a></li>
                             
-                            </script>
-                        </div>
-                    </ul>
-                </nav>
+                                <div class="cadastro">
+                                    <button class="usuario">
+                                        <img src="_imagens/boneco-login.png" onclick="abre()" />
+                                    </button>
+                                    <script>
+                                        function abre(){
+                                        window.location.href='cadastro.php';
+                                        }
+                                
+                                    </script>
+                                </div>
+                            </ul>
+
+                            <img src="_imagens/coralsf.png" id="icone">
+                        </nav>
+                            
+                    </div>
+
+
 
             </header>
+
+        <main id="interface">
             <section id="principal">
                 <article id="titulos">
                     <h1>Peixes Flora&reg;</h1>
@@ -91,15 +121,18 @@
                             <li onmousemove="verme()" class="letraa">Vermífugos</li>
                             <li onmousemove="imuno()" class="letraa">Imunizantes</li>
                         </ul>
+
                         <li>Aquários</li>
+
                         <ul>
                             <li onmousemove="bomba()" class="letraa">Bombas de Oxigênio</li>
                             <li onmousemove="enfeite()" class="letraa">Enfeites</li>
                             <li onmousemove="limpeza()" class="letraa">Produtos de limpeza</li>
                         </ul>
+
                     </ul>
 
-                        <img src="/_imagens/ajudasf.png" class="pg-img">
+                        <img src="_imagens/ajudasf.png" class="pg-img">
                         
                     </p>
 
@@ -119,7 +152,8 @@
 
                     <p>Na loja de peixes tropicais Peixes Flora, os exemplares são retirados de fontes responsáveis ​​e
                         mantidos.Que vão desde os vibrantes tetras e ciclídeos até os
-                        graciosos peixes-disco e os encantadores bettas </p>
+                        graciosos peixes-disco e os encantadores bettas 
+                    </p>
 
                     <h3>Várias Cores</h3>
                     <img src="_imagens/peixe-retarcadob.png" id="colorido" onmousemove="variosPeixes(1)"
@@ -146,7 +180,8 @@
                         href="https://www.mg.senac.br/DocsAreasComuns/Portfolio_Digital_cursos.pdf" target="_blank">
                         Técnico em Informática</a> 2/3</p>
             </footer>
-        </div>
+        </main>
+        <script src="/projeto_PeixesFlora/_javascript/scroll.js"></script>
     </body>
 
 </html>

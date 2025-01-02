@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <link rel="stylesheet" type="text/css" href="_css/contato.css"/>
-    <script language="javascript" src="_javascript/funcoes.js"></script>
+
 </head>
 <body>
     <div id="Interface">
@@ -21,6 +21,8 @@
                         <li onmousemove="mudaFoto('_imagens/aquariosf.png')" onmouseout="mudaFoto('_imagens/coralsf.png')" ><a href="aquarios.html">Aquários</a></li>
                         <li onmousemove="mudaFoto('_imagens/promocoessf.png')" onmouseout="mudaFoto('_imagens/coralsf.png')" ><a href="produtosgerais.html">Produtos Gerais</a></li>
                         <li onmousemove="mudaFoto('_imagens/ajudasf.png')" onmouseout="mudaFoto('_imagens/coralsf.png')"><a href="contato.html">Contato</a></li>
+                        <li onmousemove="mudaFoto('_imagens/promocoessf.png')"
+                        onmouseout="mudaFoto('_imagens/coralsf.png')"><a href="comprar.html">Comprar</a></li>
     
                 </ul>
             </nav>
@@ -48,7 +50,7 @@
     </p>
 
 
-    <form method="post" id="fContato" action="malto:rogersoubrand1a@gmail.com" oninput="tipodeAjuda();">
+    <form method="post" id="fContato" action="malto:rogersoubrand1a@gmail.com">
         <fieldset  id="cliente">
             <legend>Dados do Cliente</legend>
             <p><label form="cNome">Nome: </label><input type="text" name="tNome" id="cNome" size="30" maxlength="30" placeholder="Nome Completo" />  </p>
@@ -57,7 +59,7 @@
 
             <fieldset id="endereco">
                 <legend>Endereço</legend>
-                <p><label form="cRg">Região: </label> 
+                <p><label form="cReg">Região: </label> 
                     <select name="tReg" id="cReg">
                         <option value-="roça"> Região Barreiro</option>
                         <option value="lest">Região Leste</option>
@@ -111,7 +113,7 @@
             <input type="text" name="tTot" id="cTot" placeholder="Valor do Atendimento"readonly/>  </p>
         
         
-            <input type="image" name="tEnviar" src="_imagens/enviar.png" width="300"/>
+            <input type="image" name="tEnviar" src="_imagens/enviar.png" width="300" onclick="tipodeAjuda()"/>
         
     </fieldset>
     </form>
@@ -146,5 +148,6 @@
             Técnico em Informática</a> 2/3</p>
 </footer>
 </div>
+<script src="/projeto_PeixesFlora/_javascript/funcoes.js"></script>
 </body>
 </html>

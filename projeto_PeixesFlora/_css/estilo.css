@@ -1,43 +1,31 @@
 /*fonte Barlow, Gloria Hallelujah  e Yanone Kaffeesatz*/
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Gloria+Hallelujah&family=Oswald&family=Yanone+Kaffeesatz&display=swap');
 
-/* Cor da página */
-body {
-    color: rgb(16, 16, 80);
-    background-color: #fce490;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --ocean:rgb(16, 16, 80);
+    --clearBrow: #fce490;
+    --clear:#fffae1;
+}
+
+body{
+    color:var(--ocean);
+    background-color: var(--clearBrow);
     font-family: Arial, sans-serif;
     font-size: 20pt;
-}
+    overflow-x: hidden;/* tira o scrol horizontal */
 
-/* LARGURA DO TEXTO NA PÁGINA */
-div#Interface {
-    width: 1000px;
-    /*largura da página central*/
-    background-color: #ffffff;
-    margin: -20px auto 0px auto;
-    box-shadow: px 0px 10px rgba(0, 0, 0, .5);
-    padding: 10px 10px 10px 10px;
-}
-
-/*CABEÇALHO*/
-header#cabecalho {
-    border-bottom: 4px #BB9469 ridge;
-    /*grossuro, cor e tipo*/
-    height: 100px;
-    background: url("/_imagens/logo2.png ") no-repeat 250px -80px;
-    background-size: 500px 250px;
-}
-
-/*POSIÇÃO DA IMAGEM do cabecalho (coral)*/
-header#cabecalho img#icone {
-    position: relative;
-    left: 100px;
-    top: 120px;
-    width: 200px;
+    display: flex;
+    flex-flow: column wrap; 
+    z-index: 0; 
 }
 
 /* Formatação dos títulos*/
-h2 {
+h2, h3 {
     text-align: center;
     font-family: Yanone Kaffeesatz;
 
@@ -49,108 +37,159 @@ h1 {
     font-size: 50pt;
 }
 
-h3 {
-    text-align: center;
-    font-family: Yanone Kaffeesatz;
-}
-
 p {
     text-align: justify;
     text-indent: 50px;
 }
 
 
-/* Borda da página */
-figure.imagens-borda img {
+
+/*CABEÇALHO*/
+#header-mobile{
+    display: none;
+}
+
+
+
+/*POSIÇÃO DA IMAGEM do cabecalho (coral)*/
+#icone {
+    width: 10rem;
+    height: 8rem;
+    margin: 1rem;
+}
+
+
+
+/*MENUS*/
+.menus {
+    width: 100%;
+    min-width: 100%;
+    background-color: var(--clearBrow);
+    box-shadow: 0px 0px 10px 1px black;
+
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: row;
+
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    position: relative;
+}
+
+.menus a {
+    color: #BB9469;
+    text-decoration: none;
+    /*tira o sublinhado*/
+}
+
+.menus ul {
+    list-style: none;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menus li {
+    display: block;
+    background-color: rgb(16, 16, 80);
+    padding: 0.5rem;
+    margin: 0.2rem;
+    font-size: 1rem;
+    box-shadow: 0px 0px 4px black;
+    transition: background-color 1s; /*coloca transição*/
+    text-align: center;
+    border-radius: 6rem;
+}
+
+.menus li:hover {
+    background-color: #fce490;
+    text-decoration: none;
+}
+
+.usuario{
+    width: 8rem;
+}
+
+
+/* LARGURA DO TEXTO NA PÁGINA parte branca */
+/* alinha no centro */
+#interface{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* principal */
+#principal {
+    display: flex;
+
+    z-index: 1;
+    width: 100%;
+    max-width: 80%;
+
+    min-height: 100%;
+    max-height: 100%;
+    height:100%;
+
+    background-color: var(--clear);
+    box-shadow: px 0px 10px rgba(0, 0, 0, .5);
+    padding: 1rem;
+    position: relative;
+    /* width: -1px;
+    float: left;
+    padding-right: 15px; */
+    
+}
+
+/* IMAGEM PARALAX */
+/* figure.imagens-borda img {
     width: 100%; 
     position: relative;
     border: 4px ridge #BB9469;
     box-shadow: 1px 1px 10px black;
     
-}
-
-/*MENUS*/
-nav#menus {
-    display: block;
-}
-
-nav#menus a {
-    color: #BB9469;
-    text-decoration: none;
-    /*tira o sublinhado*/
-}
-
-nav#menus li {
-    display: block;
-    background-color: rgb(16, 16, 80);
-    padding: 10px;
-    margin: 4px;
-    box-shadow: 0px 0px 4px black;
-    transition: background-color 1s;
-    /*coloca transição*/
-    text-align: center;
-}
-
-nav#menus ul {
-    list-style: none;
-    text-transform: uppercase;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-
-}
-
-nav#menus li:hover {
-    background-color: #fce490;
-    text-decoration: none;
-}
-
-/*CONFIGURANDO SEPARAÇÕES*/
-/*lateral*/
-
-/*principal*/
-section#principal {
-    display: block;
-    width: -1px;
-    float: left;
-    padding-right: 15px;
-}
+} */
 
 /*rodape da página*/
-footer#rodape {
+/* footer#rodape {
     clear: both;
     border-top: 4px ridge #BB9469;
-}
+} */
 
-footer#rodape p {
+/* footer#rodape p {
     text-align: center;
-}
+} */
 
 /*formatação de Links (principalmente do rodapé)*/
-a {
+/* a {
     text-align: center;
     color: #BB9469;
     text-decoration: none;
-    /*tira o sublinhado*/
-}
+    
+} */
 
-a:hover {
+/* a:hover {
     text-decoration: underline;
-    /*coloca o sublinhado*/
-}
+    
+} */
 
 /*formatação de títulos importantes*/
-article#titulos h2 {
+/* article#titulos h2 {
     color: #BB9469;
     font-size: 30pt;
     background-color: #fce490;
     padding: 5px 0px 5px 10px;
     margin: 10px 0px 10px 0px;
-    border-radius: 30px;/*coloca redondinho*/
-}
+    border-radius: 30px;
+} */
 /* CONFIG DE IMAGENS */
 /* config da imagem você escohe */
-figure#vcesc{
+/* figure#vcesc{
     position: relative;
     left: 220px;
     top:1px;
@@ -168,27 +207,23 @@ img#colorido{
     left: 310px;
     top:-20px;
     width:300px;
-}
+} */
 
 /* POSIÇÃO DOS UL DE SATISFAÇÃO */
-ul#satisfacao{
+/* ul#satisfacao{
     position: absolute;
     top: 3900px;
     left: 600px;
-}
+} */
 
 /* Cor nos tipos de produto no menu de produtos geral */
-.letraa:hover{
+/* .letraa:hover{
     background-color: #fce490;
     border-radius: 40px;
     margin-right: 400px;
-}
-ul#prod{
+} */
+/* ul#prod{
     margin-right: 250px;
-}
+} */
 
-.usuario{
-    position: relative;
-    left: 1500px;
-    top:-300px;
-}
+
